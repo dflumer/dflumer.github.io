@@ -1,0 +1,17 @@
+body{
+    padding: 15px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    color: green;
+}
+
+h2{
+    text-align: center;
+}
