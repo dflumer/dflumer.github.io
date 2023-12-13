@@ -58,6 +58,47 @@ section h2 {
     margin-bottom: 10px;
 }
 
+/* Grid Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1px;
+    padding: 10px 0;
+}
+
+.portfolio-card {
+    background-color: #000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-card h3 {
+    font-size: 20px;
+}
+
+.portfolio-card p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05);
+}
+
 /* Footer Styling */
 footer {
     background-color: var(--primary-color);
