@@ -58,6 +58,11 @@ section h2 {
     margin-bottom: 10px;
 }
 
+.styled-image{
+    width: 200px;
+    height: auto;
+}
+
 /* Grid Styling */
 body {
     font-family: Arial, sans-serif;
