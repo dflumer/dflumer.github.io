@@ -1,0 +1,67 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Roboto font for overall consistency */
+}
+
+/* Color Variables */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #d3c0b0; /* Soft Beige */
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    color: #d3c0b0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.headerMain h2, .headerBlurb p {
+    margin: 10px 0;
+}
+
+/* Navigation Bar Styling */
+.navBar {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navBar ul {
+    list-style: none;
+}
+
+.navBar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navBar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 700; /* Bold font for navigation links */
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    background-color: #333333;
+    color: var(--secondary-color);
+}
+
+section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
