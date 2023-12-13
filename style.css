@@ -1,23 +1,23 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Roboto font for overall consistency */
+    font-family: 'Didot', sans-serif;
 }
 
 /* Color Variables */
 :root {
     --primary-color: #000000;
-    --secondary-color: #d3c0b0; /* Soft Beige */
+    --secondary-color: #ffffff;
 }
 
 /* Header Styling */
 header {
     background-color: var(--primary-color);
-    color: #d3c0b0;
+    background-image: url(Images/headerImage.jpg);
+    color: #ffffff;
     text-align: center;
-    padding: 20px 0;
+    padding: 100px 0;
 }
 
 .headerMain h2, .headerBlurb p {
@@ -49,7 +49,7 @@ header {
 /* Section Styling */
 section {
     padding: 20px;
-    background-color: #333333;
+    background-color: #6d6d6d;
     color: var(--secondary-color);
 }
 
