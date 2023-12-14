@@ -1,21 +1,15 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     box-sizing: border-box;
     font-family: 'Didot', sans-serif;
 }
 
-/* Color Variables */
-:root {
-    --primary-color: #000000;
-    --secondary-color: #ffffff;
-}
-
 /* Header Styling */
 header {
-    background-color: var(--primary-color);
+    background-color: #000000;
     background-image: url(Images/headerImage.jpg);
-    color: #ffffff;
+    color: #eeeeee;
     text-align: center;
     padding: 100px 0;
 }
@@ -26,9 +20,10 @@ header {
 
 /* Navigation Bar Styling */
 .navBar {
-    background-color: var(--primary-color);
+    background-color: #000000;
+    color: #eeeeee;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .navBar ul {
@@ -41,67 +36,83 @@ header {
 }
 
 .navBar a {
-    color: var(--secondary-color);
+    color: #eeeeee;
     text-decoration: none;
-    font-weight: 700; /* Bold font for navigation links */
+    font-weight: 700;
 }
 
 /* Section Styling */
 section {
-    padding: 20px;
-    background-color: #a9a7a7;
-    color: var(--secondary-color);
+    padding: 30px ;
 }
 
-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
+#about {
+    background-color: #101010;
+    color: #eeeeee;
+
+    .styled-image{
+        width: 200px;
+        height: auto;
+    }
+
+    .h2{
+        color: #eeeeee;
+    }
 }
 
-.styled-image{
-    width: 200px;
-    height: auto;
+/* PORTFOLIO SECTION */
+#portfolio {
+    background-color: #eeeeee;
+    color:#000000;
+    
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1px;
+        padding: 10px 0;
+    }
+    
+    .portfolio-card {
+        background-color: #000000;
+        color: #eeeeee;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .portfolio-card img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .portfolio-card h3 {
+        font-size: 20px;
+    }
+    
+    .portfolio-card p {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .portfolio-card:hover {
+        transform: scale(1.05);
+    }
 }
 
-/* Grid Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+#resume {
+    background-color: #101010;
+    color:#eeeeee
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1px;
-    padding: 10px 0;
+#blog {
+    background-color: #eeeeee;
+    color:#101010;
 }
 
-.portfolio-card {
-    background-color: #000000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.portfolio-card img {
-    max-width: 100%;
-    height: auto;
-}
-
-.portfolio-card h3 {
-    font-size: 20px;
-}
-
-.portfolio-card p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.portfolio-card:hover {
-    transform: scale(1.05);
+#contact {
+    background-color: #4d4c4c;
+    color: #ffffff;
 }
 
 /* Footer Styling */
