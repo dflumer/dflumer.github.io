@@ -75,10 +75,10 @@ section {
     .portfolio-card {
         background-color: #000000;
         color: #eeeeee;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         text-align: center;
         transition: transform 0.3s ease;
+        padding: 10px;
     }
     
     .portfolio-card img {
