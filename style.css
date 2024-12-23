@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Times New Roman', serif;
     line-height: 1.8;
     background-color: #1a1a1a; /* Richer black for modern feel */
     color: #d4c5a8; /* Sophisticated gold-like color */
@@ -23,8 +23,8 @@ header {
 }
 
 header h3 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 300; /* Light and elegant */
+    font-family: 'Times New Roman', serif;
+    font-weight: 100; /* Light and elegant */
     font-size: 2.5rem; /* Larger for emphasis */
     text-transform: uppercase;
     color: #b49563;
@@ -154,7 +154,7 @@ main section h3 {
 #personal {
     background-color: #222;
     padding: 20px;
-    color: #e1d7c6;
+    color: #d4c5a8;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -171,7 +171,7 @@ main section h3 {
 #portfolio {
     background-color: #222;
     padding: 20px;
-    color: #e1d7c6;
+    color: #d4c5a8;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -183,6 +183,69 @@ main section h3 {
 
 #portfolio a:hover {
     text-decoration: underline;
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel Track */
+.carousel-track-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Carousel Slides */
+.carousel-slide {
+    list-style: none;
+    min-width: 50%; /* Each slide takes full width */
+    text-align: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+}
+
+.carousel-slide p {
+    font-size: 1.2rem;
+    color: #d4c5a8;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #655b46;
+    padding: 5px 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    color: #e1d7c6;
 }
 
 #contact {
