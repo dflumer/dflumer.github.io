@@ -10,13 +10,20 @@
 <body>
     <header>
         <h3>hello, welcome to my website.</h3>
-        <nav>
-            <ul>
-                <li><a href="#about">About.</a></li>
-                <li><a href="projects">Projects.</a></li>
-                <li><a href="#contact">Contact.</a></li>
-            </ul>
-        </nav>
+        <div class="nav">
+            <a href="#about">about.</a>
+            <a href="#contact">contact.</a>
+            <div class="dropdown">
+                <button class="dropbtn">projects.
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">project 1</a>
+                    <a href="#">project 2</a>
+                    <a href="#">project 3</a>
+                </div>
+            </div>
+        </div>        
     </header>
     <main>
         <section id="about">
@@ -25,7 +32,7 @@
         </section>
         <section id="projects">
             <h3>projects.</h3>
-            <p>This is the contact section.</p>
+            <p>This is the projects section.</p>
         </section>
         <section id="contact">
             <h3>contact.</h3>
