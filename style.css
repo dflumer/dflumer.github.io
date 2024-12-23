@@ -19,7 +19,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
-    border-bottom: 1px solid #90826c;
+    border-bottom: 1px solid #b49563;
 }
 
 header h3 {
@@ -27,7 +27,7 @@ header h3 {
     font-weight: 300; /* Light and elegant */
     font-size: 2.5rem; /* Larger for emphasis */
     text-transform: uppercase;
-    color: #90826c;
+    color: #b49563;
     background-color: rgba(0, 0, 0, 0.7); /* Elegant overlay */
     padding: 10px;
     text-align: center; /* Centers the text horizontally */
@@ -72,7 +72,7 @@ header .nav a,
 .navbar a {
     float: left;
     font-size: 16px;
-    color: #90826c;
+    color: #b49563;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -89,7 +89,7 @@ header .nav a,
     border: none;
     outline: none;
     background-color: rgba(26, 26, 26, 0.8); /* Sleek black */
-    color: #90826c; /* Match the nav link color */
+    color: #b49563; /* Match the nav link color */
     font-family: inherit;
     margin: 0;
 }
@@ -128,38 +128,85 @@ header .nav a,
 }
 
 main {
-    padding: 40px 20px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 30px; /* Space between sections */
 }
 
 main section {
+    background-color: #222; /* Same dark background */
     padding: 20px;
-    background-color: #222; /* Slightly lighter than the background */
-    color: #e1d7c6; /* Text matches the header */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    color: #e1d7c6; /* Soft gold-like text */
+    text-align: center; /* Center the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    margin-bottom: 30px; /* Spacing between sections */
+}
+
+/* Section Headings */
+main section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; /* Larger font size for emphasis */
+    color: #b49563; /* Gold color for headings */
+    margin-bottom: 15px; /* Space below the heading */
 }
 
 #personal {
-    background-color: #0e0e0e;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #222;
+    padding: 20px;
+    color: #e1d7c6;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#personal a {
+    color: #d4c5a8;
+    text-decoration: none;
+}
+
+#personal a:hover {
+    text-decoration: underline;
 }
 
 #portfolio {
-    background-color: #0e0e0e;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #222;
+    padding: 20px;
+    color: #e1d7c6;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#portfolio a {
+    color: #d4c5a8;
+    text-decoration: none;
+}
+
+#portfolio a:hover {
+    text-decoration: underline;
 }
 
 #contact {
-    background-color: #0e0e0e;  
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #222;
+    padding: 20px;
+    color: #e1d7c6;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
+#contact a {
+    color: #d4c5a8;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
 
 footer {
     background: #000000;
-    color: #90826c;
+    color: #b49563;
     padding: 10px;
-    border-top: 1px solid #90826c;
+    border-top: 1px solid #b49563;
     text-align: center;
 }
