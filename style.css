@@ -145,7 +145,7 @@ main section {
 
 /* Section Headings */
 main section h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Times New Roman', serif;
     font-size: 2rem; /* Larger font size for emphasis */
     color: #b49563; /* Gold color for headings */
     margin-bottom: 15px; /* Space below the heading */
