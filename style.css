@@ -19,6 +19,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
+    border-bottom: 1px solid #90826c;
 }
 
 header h3 {
@@ -26,11 +27,11 @@ header h3 {
     font-weight: 300; /* Light and elegant */
     font-size: 2.5rem; /* Larger for emphasis */
     text-transform: uppercase;
-    color: #e1d7c6; /* Softer white for luxury */
+    color: #90826c;
     background-color: rgba(0, 0, 0, 0.7); /* Elegant overlay */
     padding: 10px;
+    text-align: center; /* Centers the text horizontally */
 }
-
 
 header .nav {
     display: flex;
@@ -83,12 +84,12 @@ header .nav a,
 }
   
 .dropdown .dropbtn {
+    width: 100%;
     font-size: 15px;  
     border: none;
     outline: none;
-    padding: 14px 16px;
     background-color: rgba(26, 26, 26, 0.8); /* Sleek black */
-    color: #e1d7c6; /* Match the nav link color */
+    color: #90826c; /* Match the nav link color */
     font-family: inherit;
     margin: 0;
 }
