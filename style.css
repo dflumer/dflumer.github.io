@@ -6,10 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    line-height: 2;
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
 }
 
 /* Container for the entire page */
@@ -22,48 +23,58 @@ body {
 /* Header section */
 header {
     background: #333;
-    color: #fff;
+    color: #f4f4f4;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #77aaff 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
+    border-bottom: 1px solid #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header #branding {
-    float: left;
-}
-
-header #branding h1 {
-    margin: 0;
+    float: none; /* Removed float for better alignment */
+    margin-left: 10px;
 }
 
 header nav {
-    float: right;
-    margin-top: 10px;
+    float: none; /* Removed float for better alignment */
+    margin-right: 10px;
 }
+
+header ul {
+    list-style: none;
+    display: flex; /* Make the links align horizontally */
+    gap: 10px; /* Add spacing between links */
+    margin: 0;
+    padding-right: 10px;
+    padding-bottom: 0px; 
+}
+
+header li {
+    display: inline-block;
+}
+
+header a {
+    color: #f4f4f4;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+header a:hover {
+    color: #bcb285; /* Change the text color on hover */
+}
+
 
 /* Showcase section */
 #showcase {
     min-height: 400px;
-    background: url('showcase.jpg') no-repeat 0 -400px;
+    background: url('showcase.jpg') no-repeat center center;
+    background-size: cover;
     text-align: center;
-    color: #fff;
+    color: #f4f4f4;
 }
 
 #showcase h1 {
@@ -79,7 +90,7 @@ header nav {
 /* Main content section */
 #main {
     padding: 20px;
-    background: #333;
+    background: #444;
 }
 
 /* Sidebar section */
@@ -87,8 +98,8 @@ header nav {
     float: right;
     width: 30%;
     margin-top: 10px;
-    background: #333;
-    color: #fff;
+    background: #444;
+    color: #f4f4f4;
     padding: 15px;
 }
 
@@ -107,4 +118,11 @@ footer {
     color: #fff;
     background-color: #333;
     text-align: center;
+}
+
+/* Add clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
