@@ -50,16 +50,12 @@ header .nav li {
     position: relative;
 }
 
-header .nav a {
-    color: #e1d7c6; /* Soft white */
-    padding: 10px 20px;
-    text-transform: uppercase;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-header .nav a:hover {
-    color: #d4c5a8; /* Gold accent on hover */
-    background-color: rgba(212, 197, 168, 0.1); /* Subtle hover effect */
+header .nav a,
+.dropdown .dropbtn {
+    color: #e1d7c6; /* Default text color */
+    background-color: transparent; /* Transparent by default */
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown .dropbtn {
@@ -101,7 +97,6 @@ header .nav a:hover {
     background-color: rgba(55, 55, 51, 0.9);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     transition: color 0.3s ease, background-color 0.3s ease;
-    color: #a79c6d; /* Contrast for readability */
 }
   
 .dropdown-content {
@@ -120,6 +115,11 @@ header .nav a:hover {
     text-decoration: none;
     display: block;
     text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #4641386c; /* Gold hover */
+    color: #e1d7c6; /* Dark text */
 }
   
 .dropdown:hover .dropdown-content {
