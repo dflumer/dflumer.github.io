@@ -48,6 +48,7 @@ header .nav ul {
 }
 
 header .nav li {
+    list-style: none;
     position: relative;
 }
 
