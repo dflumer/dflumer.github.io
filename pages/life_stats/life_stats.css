@@ -13,6 +13,7 @@ body {
 }
 
 /* Header section */
+/* Header section */
 header {
     background-image: url('images/desktop.jpeg');
     background-size: cover;
@@ -23,14 +24,21 @@ header {
 }
 
 header h3 {
+    text-align: center; /* Centers the content */
+    margin: 0 auto;
+}
+
+header h3 a {
+    display: block; /* Makes the link take up the full width of h3 */
     font-family: 'Times New Roman', serif;
-    font-weight: 100; /* Light and elegant */
-    font-size: 2.5rem; /* Larger for emphasis */
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-decoration: none;
     text-transform: uppercase;
     color: #b49563;
-    background-color: rgba(0, 0, 0, 0.7); /* Elegant overlay */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
-    text-align: center; /* Centers the text horizontally */
+    text-align: center; /* Centers the text inside the block link */
 }
 
 header .nav {
