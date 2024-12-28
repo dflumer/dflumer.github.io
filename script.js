@@ -1,57 +1,47 @@
-// Select necessary elements
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel-btn.next');
-const prevButton = document.querySelector('.carousel-btn.prev');
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const slideWidth = slides[0].getBoundingClientRect().width;
 
-// Get the width of a single slide
-const slideWidth = slides[0].getBoundingClientRect().width;
+    let currentIndex = 0;
 
-// Arrange the slides side by side
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-};
-slides.forEach(setSlidePosition);
+    // Arrange the slides next to each other
+    const setSlidePosition = (slide, index) => {
+        slide.style.left = slideWidth * index + 'px';
+    };
+    slides.forEach(setSlidePosition);
 
-// Function to move the carousel track
-const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = `translateX(-${targetSlide.style.left})`;
-};
+    // Move to the next slide
+    const moveToNextSlide = () => {
+        currentIndex++;
+        if (currentIndex >= slides.length) {
+            currentIndex = 0; // Loop back to the first slide
+        }
+        const targetSlide = slides[currentIndex];
+        track.style.transform = `translateX(-${targetSlide.style.left})`;
+    };
 
-// Function to handle next button click
-const handleNextButtonClick = () => {
-    const currentSlide = track.querySelector('.current-slide') || slides[0];
-    const nextSlide = currentSlide.nextElementSibling;
+    // Start auto-scroll
+    let autoScrollInterval = setInterval(moveToNextSlide, 8000); // Slow transition every 8 seconds
 
-    if (nextSlide) {
-        currentSlide.classList.remove('current-slide');
-        nextSlide.classList.add('current-slide');
-        moveToSlide(track, currentSlide, nextSlide);
-    }
-};
+    // Pause auto-scroll on hover
+    const carousel = document.querySelector('.carousel');
+    carousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+    carousel.addEventListener('mouseleave', () => {
+        autoScrollInterval = setInterval(moveToNextSlide, 8000); // Restart auto-scroll
+    });
 
-// Function to handle previous button click
-const handlePrevButtonClick = () => {
-    const currentSlide = track.querySelector('.current-slide') || slides[0];
-    const prevSlide = currentSlide.previousElementSibling;
+    // Optional: Manual controls
+    const prevButton = document.querySelector('.carousel-btn.prev');
+    const nextButton = document.querySelector('.carousel-btn.next');
 
-    if (prevSlide) {
-        currentSlide.classList.remove('current-slide');
-        prevSlide.classList.add('current-slide');
-        moveToSlide(track, currentSlide, prevSlide);
-    }
-};
+    prevButton.addEventListener('click', () => {
+        currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
+        moveToNextSlide();
+    });
 
-// Attach event listeners to buttons
-nextButton.addEventListener('click', handleNextButtonClick);
-prevButton.addEventListener('click', handlePrevButtonClick);
-
-// Optional: Auto-rotate carousel
-const autoRotateCarousel = () => {
-    setInterval(() => {
-        handleNextButtonClick();
-    }, 5000); // Adjust timing as needed (e.g., 5000ms = 5 seconds)
-};
-
-// Uncomment the line below to enable auto-rotation
-// autoRotateCarousel();
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        moveToNextSlide();
+    });
+});
