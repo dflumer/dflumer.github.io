@@ -44,7 +44,7 @@
   .hero .texture{position:absolute; inset:-1px; pointer-events:none; background:radial-gradient(1200px 400px at 20% -10%, rgba(255,244,210,.07), transparent 60%), radial-gradient(1000px 400px at 100% 0%, rgba(127,139,120,.06), transparent 60%)}
   
   .grid.two{display:grid; grid-template-columns:1fr 1fr; gap:16px}
-  .card{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px; width: 100%;}
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px;}
   .bullets{margin:8px 0 0 18px}
   
   .work-grid{display:grid; grid-template-columns:repeat(12,1fr); gap:16px}
