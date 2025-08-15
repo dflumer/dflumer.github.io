@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300&family=Cormorant+Garamond:wght@300&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h3><a href="index.html">dana hughes</a></h3>
+        <div class="nav">
+            <div class="dropdown">
+                <button class="dropbtn">personal
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <li><a href="pages/about_me/about_me.html">about me</a></li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">professional
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">resume</a>
+                    <li><a href="pages/project/project.html">project</a></li>
+                    <a href="#">my github</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">contact
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">email</a>
+                </div>
+            </div>
+        </div>        
+    </header>
+    <main>
+        <section id="portfolio">
+        <div class="carousel">
+            <button class="carousel-btn prev">&lt;</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide">
+                        <img src="project1.jpg" alt="Class 1">
+                        <p>Symbolic and Numerical Computations</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="project1.jpg" alt="Class 2">
+                        <p>Scientific Computing</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="project1.jpg" alt="Class 3">
+                        <p>Discrete Algorithms for Scientific Applications</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="project1.jpg" alt="Class 4">
+                        <p>Continuous Algorithms for Scientific Applications</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="project1.jpg" alt="Class 5">
+                        <p>Bioinformatics</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="project1.jpg" alt="Class 6">
+                        <p>Lipid Nanotechnology</p>
+                    </li>
+                </ul>
+            </div>
+        <button class="carousel-btn next">&gt;</button>
+    </div>
+</section>
+        <section id="personal">
+            <h3>hello.</h3>
+            <p> Update.
+            <a href="mailto:dflumer@me.com">my email</a></p>
+            <a>my LinkedIn (currently disabled)</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dana Hughes</p>
+    </footer>
+</body>
+</html>
