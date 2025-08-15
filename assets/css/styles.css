@@ -19,7 +19,7 @@
   .page{display:grid}
   .sidebar{position:fixed; top:0; left:0; bottom:0; width:var(--sidebar); padding:24px; background:linear-gradient(180deg,var(--surface),var(--surface2)); border-right:1px solid var(--border); box-shadow:var(--shadow);}
   .brand{display:flex; gap:12px; align-items:center;}
-  .avatar{width:46px; height:46px; border-radius:12px; object-fit:cover; border:1px solid var(--border);}
+  .avatar{width:150px; height:150px; border-radius:12px; object-fit:cover; border:1px solid var(--border);}
   .brand-title{font-family:var(--serif); font-size:22px; margin:0}
   .brand-sub{margin:0; color:var(--muted); font-size:13px}
   .nav{display:grid; gap:8px; margin:16px 0}
