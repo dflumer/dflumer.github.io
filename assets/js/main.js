@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = encodeURIComponent(fd.get('message'));
         const subject = `Inquiry from ${decodeURIComponent(name)}`;
         const bodyTxt = `Name: ${decodeURIComponent(name)}%0AEmail: ${decodeURIComponent(email)}%0A%0A${decodeURIComponent(message)}`;
-        window.location.href = `mailto:danabiomath@fsu.edu?subject=${encodeURIComponent(subject)}&body=${bodyTxt}`;
+        window.location.href = `mailto:dhughes4@fsu.edu?subject=${encodeURIComponent(subject)}&body=${bodyTxt}`;
       });
     }
   });
