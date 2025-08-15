@@ -136,7 +136,7 @@ header p.muted{margin:0 0 12px; color:var(--muted)}
   border:1px dashed var(--border); color:var(--muted); font-family:var(--mono)
 }
 .project .desc{color:var(--muted)}
-.meta-list{display:flex; gap:8px; flex-wrap:wrap; padding:0; margin:0}
+.meta-list{margin:0}
 .meta .tag, .meta-list .tag{background:rgba(127,139,120,.12); color:var(--text); border-color:var(--accent)}
 .more{justify-self:start}
 
